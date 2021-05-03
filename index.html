@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Border-radius Previewer</title>
+</head>
+<script language="javascript" src="main.js"></script>
+<body>
+    <div id="container">
+        <h1 id="title"><label for="css-border-radius">Border-radius Previewer</label></h1>
+
+
+        <div oninput="change()" id="inputs">
+          <div class="block">
+            <input type="text" id="topLeft" name="buttonTopLeft" size="10" maxlength="5"/>
+            
+            <input type="text" id="bottomLeft" name="buttonBottomLeft" size="10" maxlength="5"/>
+          </div>
+        </div>
+        <div id="boxes">
+          <div name="boxItem" id="border-radius"></div>
+
+          <div name="boxText" id="textCopy">
+            <textarea id="areaCode"></textarea>
+          </div>
+        </div>
+
+       
+        <div oninput="change()" id="inputs">
+          <div class="block">
+            <input type="text" id="topRight" name="buttonTopRight" size="10" maxlength="5"/>
+            
+            <input type="text" id="bottomRight" name="buttonBottomRight" size="10" maxlength="5"/>
+          </div>
+        </div>
+        <div class="copy-container">
+          <input type="button" id="btnCopy" value="Copy CSS" onclick="copyText()"/>
+        </div>
+    </div>
+    
+</body>
+</html>
